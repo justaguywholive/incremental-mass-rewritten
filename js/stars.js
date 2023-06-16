@@ -19,7 +19,7 @@ const STARS = {
         tmp.overflow.star = calcOverflow(o,x,'ee55')
         */
 
-        return x
+        return x .mul(5)}
     },
     softGain() {
         let s = E("e1000").pow(tmp.fermions.effs[1][0]||1)
