@@ -495,10 +495,10 @@ const FORMS = {
 
             if (CHALS.inChal(13)) x = x.max(1).log10().tetrate(1.5)
             return x
-        },
+        }
         f() {
             let x = player.bh.mass.add(1).pow(tmp.bh.massPowerGain).softcap(tmp.bh.fSoftStart,tmp.bh.fSoftPower,2)
-            return x .mul(5)
+            return x 
         },
         fSoftStart() {
             let x = uni("e3e9")
