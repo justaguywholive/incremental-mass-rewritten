@@ -146,7 +146,7 @@ const FORMS = {
 
         if (CHALS.inChal(13)) x = x.max(1).log10().tetrate(1.5)
 
-        return x
+        return x .mul (5)
     },
     massSoftGain() {
         if (player.ranks.hex.gte(6)) return EINF
@@ -432,7 +432,7 @@ const FORMS = {
             if (hasElement(59)) x = E(0.45)
             x = x.add(tmp.radiation.bs.eff[4])
             x = x.add(tmp.dark.shadowEff.bhp||0)
-            return x
+            return x .mul(5)
         },
         massGain() {
             let x = tmp.bh.f
@@ -498,7 +498,7 @@ const FORMS = {
         },
         f() {
             let x = player.bh.mass.add(1).pow(tmp.bh.massPowerGain).softcap(tmp.bh.fSoftStart,tmp.bh.fSoftPower,2)
-            return x
+            return x .mul(5)
         },
         fSoftStart() {
             let x = uni("e3e9")
