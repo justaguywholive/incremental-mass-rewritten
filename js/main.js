@@ -22,7 +22,7 @@ const FORMS = {
         
         if (tmp.inf_unl) x = x.mul(10).mul(theoremEff('time',0))
 
-        return x .mul (5)}
+        return x
     },
     getPreQUGlobalSpeed() {
         let x = E(1), inf = tmp.preInfGlobalSpeed
@@ -146,7 +146,7 @@ const FORMS = {
 
         if (CHALS.inChal(13)) x = x.max(1).log10().tetrate(1.5)
 
-        return x .mul (5)
+        return x .mul (50)
     },
     massSoftGain() {
         if (player.ranks.hex.gte(6)) return EINF
